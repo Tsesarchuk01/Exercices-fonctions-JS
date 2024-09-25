@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 😄 Exercice 1 : Calculer l’aire d’un rectangle
+      function calculerAireRectangle(largeur, hauteur) {
+        return largeur * hauteur;
+      }
+      console.log(calculerAireRectangle(5, 10));
+      console.log(calculerAireRectangle(8, 3));
+
+      //😄 Exercice 2 : Conversion de température
+
+      function convertirEnCelsius(fahrenheit) {
+        return ((fahrenheit - 32) * 5) / 9;
+      }
+
+      console.log(convertirEnCelsius(32));
+      console.log(convertirEnCelsius(68));
+
+      //😊 Exercice 3 : Déterminer si un nombre est pair
+
+      function estPair(nombre) {
+        return nombre % 2 === 0;
+      }
+
+      console.log(estPair(4));
+      console.log(estPair(7));
+
+      //😊 Exercice 4 : Calculer la factorielle d’un nombre
+
+      function factorielle(n) {
+        if (n === 0 || n === 1) {
+          return 1;
+        }
+        return n * factorielle(n - 1);
+      }
+
+      console.log(factorielle(5));
+      console.log(factorielle(3));
+
+      //😅 Exercice 5 : Trouver le plus grand nombre dans un tableau
+
+      function trouverMax(tableau) {
+        return Math.max(...tableau);
+      }
+
+      console.log(trouverMax([3, 7, 2, 5, 10]));
+      console.log(trouverMax([1, 20, 3, 14]));
+
+      //😰/😡 Exercice 6 : Compter les voyelles dans une chaîne de caractères
+
+      function compterVoyelles(chaine) {
+        const voyelles = "aeiouyAEIOUY";
+        let compteur = 0;
+
+        for (let i = 0; i < chaine.length; i++) {
+          if (voyelles.includes(chaine[i])) {
+            compteur++;
+          }
+        }
+
+        return compteur;
+      }
+
+      console.log(compterVoyelles("Bonjour tout le monde"));
+      console.log(compterVoyelles("JavaScript"));
+
+      //😊 Exercice 7 : Doubler un nombre avec une fonction fléchée
+
+      const doubler = (nombre) => nombre * 2;
+
+      console.log(doubler(5)); // Affiche 10
+      console.log(doubler(7)); // Affiche 14
+    </script>
+  </head>
+  <body></body>
+</html>
